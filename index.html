@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Nova Shop</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Nova Shop</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal"
+                aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir navegación">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menuPrincipal">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#productos">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#preguntas">Preguntas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header id="inicio" class="bg-light py-5">
+        <div class="container py-3">
+            <div class="row align-items-center g-4">
+                <div class="col-lg-7">
+                    <span class="badge text-bg-primary mb-2">Lanzamiento de temporada</span>
+                    <h1 class="display-5 fw-bold">Tecnología que impulsa tus ideas</h1>
+                    <p class="lead">Encuentra accesorios y dispositivos para estudiar,
+                        trabajar y disfrutar.</p>
+                    <a class="btn btn-primary btn-lg me-2" href="#productos">Ver productos</a>
+                    <a class="btn btn-outline-dark btn-lg" href="#contacto">Contáctanos</a>
+                </div>
+                <div class="col-lg-5">
+                    <div class="p-4 bg-white rounded-3 shadow-sm">
+                        <h2 class="h4">Oferta de la semana</h2>
+                        <p class="mb-3">Descuentos especiales en accesorios seleccionados.</p>
+                        <span class="badge text-bg-success">Hasta 20% de descuento</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container mt-4">
+        <div class="alert alert-info alert-dismissible fade show" role="alert">
+            <strong>¡Bienvenido!</strong> Revisa nuestros productos destacados.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Cerrar"></button>
+        </div>
+    </div>
+    <section id="productos" class="container py-5">
+        <div class="d-flex flex-wrap justify-content-between align-items-center mb-4">
+            <div>
+                <h2 class="fw-bold mb-1">Productos destacados</h2>
+                <p class="text-secondary mb-0">Encuentra tu próximo favorito.</p>
+            </div>
+
+            <span class="badge text-bg-secondary">Catálogo</span>
+        </div>
+        <div class="row g-4">
+            <div class="col-sm-6 col-lg-4">
+                <div class="card h-100">
+                    <img src="https://placehold.co/600x400?text=Auriculares" class="card-img-top"
+                        alt="Imagen ilustrativa de auriculares">
+                    <div class="card-body d-flex flex-column">
+                        <span class="badge text-bg-success align-self-start mb-2">Disponible</span>
+                        <h3 class="card-title h5">Auriculares inalámbricos</h3>
+                        <p class="card-text text-secondary">Sonido claro para estudiar y escuchar música.</p>
+                        <p class="fs-4 fw-bold">$89.900</p>
+                        <a href="#contacto" class="btn btn-primary mt-auto">Me interesa</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+                <div class="card h-100">
+                    <img src="https://placehold.co/600x400?text=Teclado" class="card-img-top"
+                        alt="Imagen ilustrativa de teclado">
+                    <div class="card-body d-flex flex-column">
+                        <span class="badge text-bg-warning align-self-start mb-2">Popular</span>
+                        <h3 class="card-title h5">Teclado compacto</h3>
+                        <p class="card-text text-secondary">Diseño práctico para tu escritorio.</p>
+                        <p class="fs-4 fw-bold">$119.900</p>
+                        <a href="#contacto" class="btn btn-primary mt-auto">Me interesa</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+                <div class="card h-100">
+                    <img src="https://placehold.co/600x400?text=Parlante" class="card-img-top"
+                        alt="Imagen ilustrativa de parlante">
+                    <div class="card-body d-flex flex-column">
+                        <span class="badge text-bg-primary align-self-start mb-2">Nuevo</span>
+                        <h3 class="card-title h5">Parlante portátil</h3>
+                        <p class="card-text text-secondary">Lleva tu música a cualquier lugar.</p>
+                        <p class="fs-4 fw-bold">$74.900</p>
+                        <a href="#contacto" class="btn btn-primary mt-auto">Me interesa</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="preguntas" class="container py-5">
+        <h2 class="fw-bold mb-3">Preguntas frecuentes</h2>
+        <div class="accordion" id="preguntasFrecuentes">
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#respuestaUno" aria-expanded="true" aria-controls="respuestaUno">
+                        ¿Cómo puedo hacer un pedido?
+                    </button>
+                </h3>
+                <div id="respuestaUno" class="accordion-collapse collapse show" data-bs-parent="#preguntasFrecuentes">
+                    <div class="accordion-body">
+                        Puedes contactarnos mediante el formulario y consultar disponibilidad.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#respuestaDos" aria-expanded="false" aria-controls="respuestaDos">
+                        ¿Cuánto tarda el envío?
+                    </button>
+                </h3>
+                <div id="respuestaDos" class="accordion-collapse collapse" data-bs-parent="#preguntasFrecuentes">
+                    <div class="accordion-body">
+                        El tiempo depende de la ciudad y debe confirmarse al realizar el pedido.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#respuestaTres" aria-expanded="false" aria-controls="respuestaTres">
+                        ¿Puedo consultar antes de comprar?
+                    </button>
+                </h3>
+                <div id="respuestaTres" class="accordion-collapse collapse" data-bs-parent="#preguntasFrecuentes">
+                    <div class="accordion-body">
+                        Sí. Usa el formulario de contacto para enviar tus preguntas.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contacto" class="bg-light py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+
+                    <h2 class="fw-bold">Contáctanos</h2>
+                    <p class="text-secondary">Déjanos tus datos y cuéntanos qué producto te interesa.</p>
+                    <form>
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre completo</label>
+                            <input type="text" class="form-control" id="nombre" placeholder="Escribe tu nombre"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="correo" class="form-label">Correo electrónico</label>
+                            <input type="email" class="form-control" id="correo" placeholder="nombre@ejemplo.com"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="producto" class="form-label">Producto de interés</label>
+                            <select class="form-select" id="producto" required>
+                                <option value="">Selecciona un producto</option>
+                                <option>Auriculares inalámbricos</option>
+                                <option>Teclado compacto</option>
+                                <option>Parlante portátil</option>
+                                <option>Otro</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensaje" class="form-label">Mensaje</label>
+                            <textarea class="form-control" id="mensaje" rows="4"
+                                placeholder="Escribe tu consulta"></textarea>
+                        </div>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#modalConfirmacion">
+                            Revisar solicitud
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="modal fade" id="modalConfirmacion" tabindex="-1" aria-labelledby="tituloModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title fs-5" id="tituloModal">Solicitud de ejemplo</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    Este es un ejemplo visual. El formulario todavía no envía información.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Volver</button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Entendido</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-dark text-white py-4">
+
+        <div class="container text-center">
+            <p class="fw-bold mb-1">Nova Shop</p>
+            <p class="small text-white-50 mb-2">Tecnología para acompañar tus ideas.</p>
+            <p class="small mb-0">&copy; 2026 Nova Shop. Proyecto académico.</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
